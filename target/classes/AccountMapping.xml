@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--namespace用于绑定dao层接口，即面向接口编程；-->
+<!--作用：可以不用写接口的实现类-->
+<mapper namespace="cn.com.csii.dao.AccountDao">
+    <select id="findall" resultType="cn.com.csii.bean.Account">
+        select * from  account;
+    </select>
+</mapper>
